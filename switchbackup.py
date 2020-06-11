@@ -181,7 +181,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=cpus) as executor:
         future.result()
 
 nowtime = datetime.datetime.now()
-
+# 删除过期的配置文件
 backup_filelist = list(os.listdir(config['backup_path']))
 for backup_file in backup_filelist:
     filetime = datetime.datetime.fromtimestamp(

@@ -28,7 +28,9 @@ pip3 install -r requirements.txt
 支持的 `type` 有 `h3c, huawei, ruijie, cisco`
 
 ```yaml
+# 备份文件保存路径
 backup_path: '/home/xin053/swConfigBackup'
+# 备份文件保存时长, 单位: 天
 keep_time: 30
 hosts:
     - name: xxxH3C6800
